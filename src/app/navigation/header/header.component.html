@@ -8,6 +8,13 @@
     />
     {{ title }}
   </mat-toolbar-row>
+  <mat-toolbar-row>
+    <ng-container *ngFor="let language of languageList">
+      <a href="/{{ language.code }}/">
+        <button class="button">{{ language.label }}</button>
+      </a>
+    </ng-container>
+  </mat-toolbar-row>
 </mat-toolbar>
 <mat-toolbar color="accent" class="navbar">
   <div>

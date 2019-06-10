@@ -1,6 +1,6 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<app-header [title]="title"></app-header>
-<ng-container *ngFor="let language of languageList"> <a href="/{{language.code}}/"> <button class="button">{{language.label}}</button> </a></ng-container>
+<app-header [title]="title" [languageList]="languageList"></app-header>
+
 <div class="container">
   <router-outlet></router-outlet>
 </div>
