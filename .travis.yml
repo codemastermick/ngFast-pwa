@@ -4,11 +4,15 @@ node_js:
 branches:
   only:
     - master
+install:
+  - npm install -g codecov
 before_script:
   - npm install -g @angular/cli
 script:
   - npm install
   - npm run build:ssr
+  - istanbul cover ./node_modules/jasmine/bin/jasmine.js
+  - codecov
 deploy:
   skip_cleanup: true
   provider: firebase
