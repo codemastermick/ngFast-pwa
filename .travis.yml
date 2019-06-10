@@ -9,6 +9,9 @@ before_script:
 script:
   - npm install
   - npm run build:ssr
+after_success:
+  - npm run test:coverage
+  - npm run test-with-coverage
 deploy:
   skip_cleanup: true
   provider: firebase
