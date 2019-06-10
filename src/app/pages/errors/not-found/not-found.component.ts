@@ -1,13 +1,13 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { take } from 'rxjs/operators';
+import { Component, OnInit } from "@angular/core";
+import { ActivatedRoute } from "@angular/router";
+import { take } from "rxjs/operators";
 
-const errors = ['Page not found', 'Something went wrong', 'It broke!'];
+const errors = ["Page not found", "Something went wrong", "It broke!"];
 
 @Component({
-  selector: 'app-not-found',
-  templateUrl: './not-found.component.html',
-  styleUrls: ['./not-found.component.scss']
+  selector: "app-not-found",
+  templateUrl: "./not-found.component.html",
+  styleUrls: ["./not-found.component.scss"]
 })
 export class NotFoundComponent implements OnInit {
   errorMsg: string;

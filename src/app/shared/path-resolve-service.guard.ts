@@ -1,17 +1,17 @@
-import { Injectable } from '@angular/core';
-import { Resolve, ActivatedRouteSnapshot, RouterStateSnapshot, UrlTree } from '@angular/router';
-import { Observable } from 'rxjs';
-import { paths } from '../app-paths';
+import { Injectable } from "@angular/core";
+import { Resolve, ActivatedRouteSnapshot, RouterStateSnapshot, UrlTree } from "@angular/router";
+import { Observable } from "rxjs";
+import { paths } from "../app-paths";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root"
 })
 export class PathResolveService implements Resolve<string | null> {
   resolve(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot
   ): string | null {
-    const typoPath = state.url.replace('/', '');
+    const typoPath = state.url.replace("/", "");
     const threshold = this.getThreshold(typoPath);
     const dictionary = Object.values(paths)
       .filter(path => Math.abs(path.toString().length - typoPath.length) < threshold);
