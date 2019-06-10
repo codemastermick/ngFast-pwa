@@ -1,16 +1,13 @@
 import { TestBed, async } from "@angular/core/testing";
 import { RouterTestingModule } from "@angular/router/testing";
 import { AppComponent } from "./app.component";
+import { NavigationModule } from "./navigation/navigation.module";
 
 describe("AppComponent", () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule
-      ],
-      declarations: [
-        AppComponent
-      ],
+      imports: [RouterTestingModule, NavigationModule],
+      declarations: [AppComponent]
     }).compileComponents();
   }));
 
@@ -20,16 +17,21 @@ describe("AppComponent", () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'ngFast-pwa'`, () => {
+  it(`should have as title 'ngFAST'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual("ngFast-pwa");
+    expect(app.title).toEqual("ngFAST");
   });
 
-  it("should render title in a h1 tag", () => {
+  it(`should have founding year`, () => {
     const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector("h1").textContent).toContain("Welcome to ngFast-pwa!");
+    const app = fixture.debugElement.componentInstance;
+    expect(app.foundingYear).not.toBeNull();
+  });
+
+  it(`should have author`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.debugElement.componentInstance;
+    expect(app.author).not.toBeNull();
   });
 });

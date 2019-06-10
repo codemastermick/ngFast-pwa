@@ -22,4 +22,14 @@ describe("FooterComponent", () => {
   it("should create", () => {
     expect(component).toBeTruthy();
   });
+
+  it(`should have founding year`, () => {
+    const app = fixture.debugElement.componentInstance;
+    expect(app.foundingYear).not.toBeNull();
+  });
+
+  it(`should have author`, () => {
+    const app = fixture.debugElement.componentInstance;
+    expect(app.author).not.toBeNull();
+  });
 });
