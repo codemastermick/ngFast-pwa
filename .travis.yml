@@ -12,8 +12,10 @@ before_script:
 script:
   - npm install
   - npm run build:ssr
-  - istanbul cover ./node_modules/jasmine/bin/jasmine.js
+  - npm run test:coverage
   - codecov
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
 deploy:
   skip_cleanup: true
   provider: firebase
