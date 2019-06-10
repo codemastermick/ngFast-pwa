@@ -1,9 +1,9 @@
-import { async, ComponentFixture, TestBed } from "@angular/core/testing";
-import { HomeComponent } from "./home.component";
-import { MaterialModule } from "src/app/material/material.module";
-import { HomeRoutingModule } from "./home-routing.module";
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { HomeComponent } from './home.component';
+import { MaterialModule } from 'src/app/material/material.module';
+import { HomeRoutingModule } from './home-routing.module';
 
-describe("HomeComponent", () => {
+describe('HomeComponent', () => {
   let component: HomeComponent;
   let fixture: ComponentFixture<HomeComponent>;
 
@@ -20,7 +20,7 @@ describe("HomeComponent", () => {
     fixture.detectChanges();
   });
 
-  it("should create", () => {
+  it('should create', () => {
     expect(component).toBeTruthy();
   });
 });
