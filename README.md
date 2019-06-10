@@ -16,12 +16,14 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 -   Comes with long cache times if hosted on Firebase
 -   Has a custom htaccess file for hosting elsewhere
 -   Simple robots.txt included
+-   Comprehensive test suite
 
 ## Integrations
 -   Firebase
 -   Icon8
 -   Travis
 -   Codacy
+-   Codecov
 
 ## Getting started
 
@@ -31,4 +33,4 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Donations
 
-Yes I accept donations, they fuel my development! You can click the Sponsor button up at the top of the page to get more information on how to keep me going
+Yes I accept donations, they fuel my development! You can click the Sponsor button up at the top of the page to get more information on how to keep me going.
