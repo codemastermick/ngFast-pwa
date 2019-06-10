@@ -27,14 +27,14 @@ const routes: Routes = [
   {
     path: "404",
     loadChildren:
-      "../app/pages/errors/not-found/not-found.module#NotFoundModule"
+      () => import('../app/pages/errors/not-found/not-found.module').then(m => m.NotFoundModule)
   },
   { path: "", redirectTo: "/home", pathMatch: "full" }, // Fallback to home if no route is found
   {
     path: "**",
     resolve: { path: PathResolveService },
     loadChildren:
-      "../app/pages/errors/not-found/not-found.module#NotFoundModule"
+      () => import('../app/pages/errors/not-found/not-found.module').then(m => m.NotFoundModule)
   }
 ];
 
