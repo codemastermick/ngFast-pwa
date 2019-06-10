@@ -3,7 +3,7 @@ import { NotFoundComponent } from "./not-found.component";
 import { MaterialModule } from "src/app/material/material.module";
 import { NotFoundRoutingModule } from "./not-found-routing,module";
 import { RouterTestingModule } from "@angular/router/testing";
-import { By } from '@angular/platform-browser';
+import { By } from "@angular/platform-browser";
 
 describe("NotFoundComponent", () => {
   let component: NotFoundComponent;
