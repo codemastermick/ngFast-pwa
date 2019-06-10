@@ -1,0 +1,15 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>
+      404
+    </mat-card-title>
+    <mat-card-subtitle>
+      {{ errorMsg }}
+    </mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <p *ngIf="path" class="outside-card">
+      Did you mean "<a [routerLink]="path">{{ path }}</a>" ?
+    </p>
+  </mat-card-content>
+</mat-card>
