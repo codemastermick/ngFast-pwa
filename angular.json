@@ -140,6 +140,20 @@
               ]
             }
           }
+        },
+        "app-shell": {
+          "builder": "@angular-devkit/build-angular:app-shell",
+          "options": {
+            "browserTarget": "ngFast-pwa:build",
+            "serverTarget": "ngFast-pwa:server",
+            "route": "home"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "ngFast-pwa:build:production",
+              "serverTarget": "ngFast-pwa:server:production"
+            }
+          }
         }
       }
     }
