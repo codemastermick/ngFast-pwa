@@ -14,7 +14,8 @@
     "build:ssr": "npm run build:client-and-server-bundles && npm run compile:server",
     "build:client-and-server-bundles": "ng build --prod && ng run ngFast-pwa:server:production",
     "test:coverage": "ng test --watch false --browsers ChromeHeadless --code-coverage",
-    "test-with-coverage": "cat ./coverage/ngFast-pwa/lcov.info | codacy-coverage --accountToken oQObWyuKknLkdKr7XDUF --username codemastermick --projectName ngFast-pwa"
+    "test-with-coverage": "cat ./coverage/ngFast-pwa/lcov.info | codacy-coverage --accountToken oQObWyuKknLkdKr7XDUF --username codemastermick --projectName ngFast-pwa",
+    "next-update": "next-update -k true --tldr"
   },
   "private": true,
   "dependencies": {
@@ -57,6 +58,7 @@
     "karma-coverage-istanbul-reporter": "~2.0.1",
     "karma-jasmine": "~2.0.1",
     "karma-jasmine-html-reporter": "^1.4.0",
+    "next-update": "^3.6.0",
     "protractor": "~5.4.0",
     "ts-loader": "^5.2.0",
     "ts-node": "~7.0.0",
