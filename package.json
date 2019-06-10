@@ -4,9 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "test:headless": "ng test --watch false --browsers ChromeHeadless",
+    "test": "ng test --watch false --browsers ChromeHeadless",
     "lint": "ng lint --fix",
     "e2e": "ng e2e",
     "compile:server": "webpack --config webpack.server.config.js --progress --colors",
