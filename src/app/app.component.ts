@@ -6,5 +6,8 @@ import { Component } from "@angular/core";
   styleUrls: ["./app.component.scss"]
 })
 export class AppComponent {
-  title = "ngFast-pwa";
+  title = "ngFAST";           // replace this with your app"s title
+  foundingYear = 2019;        // replace with this year
+  author = "Your name here";  // your name or your company name
+
 }
