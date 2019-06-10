@@ -6,10 +6,8 @@ import { Component, OnInit, Input } from "@angular/core";
   styleUrls: ["./header.component.scss"]
 })
 export class HeaderComponent implements OnInit {
-  @Input() title = "ngFAST";
-  constructor() { }
+  @Input() title = "ngFAST"; // This gets set from app.component.ts
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

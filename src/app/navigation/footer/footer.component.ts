@@ -6,10 +6,10 @@ import { Component, OnInit, Input } from "@angular/core";
   styleUrls: ["./footer.component.scss"]
 })
 export class FooterComponent implements OnInit {
-  @Input() foundingYear = 2019;
-  @Input() author = "Your name here";
-  currentYear: number = new Date().getFullYear();
-  datestamp: string;
+  @Input() foundingYear = 2019; // This gets set from app.component.ts
+  @Input() author = "Your name here"; // This gets set from app.component.ts
+  currentYear: number = new Date().getFullYear(); // Used for displaying date ranges in the copyright
+  datestamp: string; // The actual string displayed on the footer
   constructor() {}
 
   ngOnInit() {
@@ -17,7 +17,8 @@ export class FooterComponent implements OnInit {
   }
 
   getRange(): string {
-// tslint:disable-next-line: max-line-length
-    return this.currentYear === this.foundingYear ? this.currentYear.toString() : this.foundingYear.toString() + "-" + this.currentYear.toString();
+    return this.currentYear === this.foundingYear
+      ? this.currentYear.toString()
+      : this.foundingYear.toString() + "-" + this.currentYear.toString();
   }
 }
