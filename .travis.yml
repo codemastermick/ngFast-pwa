@@ -6,6 +6,7 @@ branches:
     - master
 install:
   - npm install -g codecov
+  - npm install -g istanbul
 before_script:
   - npm install -g @angular/cli
 script:
