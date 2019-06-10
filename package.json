@@ -9,6 +9,7 @@
     "lint:all": "ng lint --fix",
     "e2e": "ng e2e",
     "compile:server": "webpack --config webpack.server.config.js --progress --colors",
+    "compile:translations": "ng xi18n --output-path translate",
     "serve:ssr": "node dist/server",
     "build:ssr": "npm run build:client-and-server-bundles && npm run compile:server",
     "build:client-and-server-bundles": "ng build --prod && ng run ngFast-pwa:server:production",
