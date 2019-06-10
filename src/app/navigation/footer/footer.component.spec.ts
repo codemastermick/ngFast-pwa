@@ -32,4 +32,14 @@ describe("FooterComponent", () => {
     const app = fixture.debugElement.componentInstance;
     expect(app.author).not.toBeNull();
   });
+
+  it(`should have datestamp`, () => {
+    const app = fixture.debugElement.componentInstance;
+    expect(app.datestamp).not.toBeNull();
+  });
+
+  it(`getRange should not be null`, () => {
+    const app = fixture.debugElement.componentInstance;
+    expect(app.getRange()).not.toBeNull();
+  });
 });
