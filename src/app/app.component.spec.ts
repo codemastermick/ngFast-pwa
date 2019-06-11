@@ -36,4 +36,11 @@ describe("AppComponent", () => {
     const app = fixture.debugElement.componentInstance;
     expect(app.author).not.toBeNull();
   });
+
+  it(`should switch themes`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const state = fixture.componentInstance.isDarkTheme;
+    fixture.detectChanges();
+    expect(state).not.toEqual(fixture.componentInstance.isDarkTheme);
+  });
 });
