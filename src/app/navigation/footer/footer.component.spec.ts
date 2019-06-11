@@ -54,4 +54,19 @@ describe("FooterComponent", () => {
     fixture.detectChanges();
     expect(app.getRange()).not.toBeNull();
   });
+
+  it(`getRange should return single year`, () => {
+    const app = fixture.debugElement.componentInstance;
+    spyOn(app, "getRange");
+    fixture.detectChanges();
+    expect(app.datestamp).toBe("2019");
+  });
+
+  it(`getRange should return a range`, () => {
+    const app = fixture.debugElement.componentInstance;
+    app.foundingYear = 2018;
+    app.datestamp = app.getRange();
+    fixture.detectChanges();
+    expect(app.datestamp).toBe("2018-2019");
+  });
 });
