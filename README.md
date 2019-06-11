@@ -19,11 +19,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 -   Comprehensive test suite
 
 ## Integrations
--   Firebase
--   Icon8
--   Travis
--   Codacy
--   Codecov
+-   Firebase hosting
+-   Icon8 externally hosted icons
+-   Travis continuous integration
+-   Codacy grade checking
+-   Codecov coverage testing
 
 ## Getting started
 
