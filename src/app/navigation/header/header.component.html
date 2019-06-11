@@ -9,7 +9,7 @@
     {{ title }}
   </mat-toolbar-row>
   <mat-toolbar-row>
-    <mat-slide-toggle>Switch theme</mat-slide-toggle>
+      <mat-slide-toggle [checked]="isDarkTheme | async" (change)="toggleDarkTheme($event.checked)">Dark theme</mat-slide-toggle>
     <ng-container *ngFor="let language of languageList">
       <a href="/{{ language.code }}/">
         <button class="button">{{ language.label }}</button>

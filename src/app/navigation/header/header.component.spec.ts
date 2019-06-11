@@ -2,6 +2,7 @@ import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 import { HeaderComponent } from "./header.component";
 import { MaterialModule } from "src/app/material/material.module";
 import { By } from "@angular/platform-browser";
+import { ThemeService } from "src/app/shared/theme.service";
 
 describe("HeaderComponent", () => {
   let component: HeaderComponent;
@@ -10,7 +11,8 @@ describe("HeaderComponent", () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [MaterialModule],
-      declarations: [HeaderComponent]
+      declarations: [HeaderComponent],
+      providers: [ThemeService]
     }).compileComponents();
   }));
 
