@@ -16,3 +16,20 @@ a{
   text-decoration: none;
   cursor: pointer;
 }
+
+.header{
+  display: flex;
+
+}
+
+.utilitybar{
+  justify-content: space-between;
+}
+
+.themetoggle{
+  flex-grow: 1;
+}
+
+.languagebar{
+  flex-shrink: 2;
+}
