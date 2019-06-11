@@ -38,6 +38,16 @@ describe("FooterComponent", () => {
     expect(app.datestamp).not.toBeNull();
   });
 
+  it(`should have valid datestamp`, () => {
+    const app = fixture.debugElement.componentInstance;
+    expect(app.datestamp.length > 0).toBeTruthy();
+  });
+
+  it(`should have currentYear`, () => {
+    const app = fixture.debugElement.componentInstance;
+    expect(app.currentYear).not.toBeNull();
+  });
+
   it(`getRange should not be null`, () => {
     const app = fixture.debugElement.componentInstance;
     spyOn(app, "getRange");
