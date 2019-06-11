@@ -15,8 +15,8 @@
     "build-locale": "npm run compile:en && npm run compile:fr",
     "serve:ssr": "node dist/server",
     "serve:fr": "ng serve --configuration=fr",
-    "build:ssr": "npm run build:client-and-server-bundles && npm run compile:server",
-    "build:client-and-server-bundles": "ng build --prod && ng run ngFast-pwa:server:production",
+    "build:ssr": "npm run build:bundles && npm run compile:server",
+    "build:bundles": "ng build --prod && ng run ngFast-pwa:server:production",
     "test:coverage": "ng test --watch false --browsers ChromeHeadless --code-coverage",
     "test:upload": "cat ./coverage/ngFast-pwa/lcov.info | codacy-coverage --accountToken oQObWyuKknLkdKr7XDUF --username codemastermick --projectName ngFast-pwa",
     "next-update": "next-update -k true --tldr"
