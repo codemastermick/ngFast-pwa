@@ -9,11 +9,16 @@
     "lint:all": "ng lint --fix",
     "e2e": "ng e2e",
     "compile:server": "webpack --config webpack.server.config.js --progress --colors",
+    "compile:translations": "ng xi18n --output-path translate",
+    "compile:en": "ng build --prod --i18n-locale en --i18n-format xlf --i18n-file translate/messages.en.xlf --output-path=dist/en --baseHref /en/",
+    "compile:fr": "ng build --prod --i18n-locale fr --i18n-format xlf --i18n-file translate/messages.fr.xlf --output-path=dist/fr --baseHref /fr/",
+    "build-locale": "npm run compile:en && npm run compile:fr",
     "serve:ssr": "node dist/server",
+    "serve:fr": "ng serve --configuration=fr",
     "build:ssr": "npm run build:client-and-server-bundles && npm run compile:server",
     "build:client-and-server-bundles": "ng build --prod && ng run ngFast-pwa:server:production",
     "test:coverage": "ng test --watch false --browsers ChromeHeadless --code-coverage",
-    "test-with-coverage": "cat ./coverage/ngFast-pwa/lcov.info | codacy-coverage --accountToken oQObWyuKknLkdKr7XDUF --username codemastermick --projectName ngFast-pwa",
+    "test:upload": "cat ./coverage/ngFast-pwa/lcov.info | codacy-coverage --accountToken oQObWyuKknLkdKr7XDUF --username codemastermick --projectName ngFast-pwa",
     "next-update": "next-update -k true --tldr"
   },
   "private": true,
@@ -38,7 +43,7 @@
     "express": "^4.15.2",
     "hammerjs": "^2.0.8",
     "rxjs": "~6.4.0",
-    "tslib": "^1.9.0",
+    "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
@@ -63,6 +68,6 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
     "typescript": "~3.4.3",
-    "webpack-cli": "^3.3.3"
+    "webpack-cli": "^3.3.4"
   }
 }
