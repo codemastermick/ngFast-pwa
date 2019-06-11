@@ -103,6 +103,13 @@
           <context context-type="linenumber">3</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="75b06993e2eea60fda4c79f2d45f6372bf51ef4f" datatype="html">
+        <source>© Copyright <x id="INTERPOLATION" equiv-text="{{ datestamp }}"/> <x id="INTERPOLATION_1" equiv-text="{{ author }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/navigation/footer/footer.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="296d979f956a25296ef06d9f8ad706984f3fb90f" datatype="html">
         <source>
       What is ngFAST anyways?
