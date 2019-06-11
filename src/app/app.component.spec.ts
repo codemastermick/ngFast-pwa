@@ -2,12 +2,14 @@ import { TestBed, async } from "@angular/core/testing";
 import { RouterTestingModule } from "@angular/router/testing";
 import { AppComponent } from "./app.component";
 import { NavigationModule } from "./navigation/navigation.module";
+import { ThemeService } from "./shared/theme.service";
 
 describe("AppComponent", () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [RouterTestingModule, NavigationModule],
-      declarations: [AppComponent]
+      declarations: [AppComponent],
+      providers: [ThemeService]
     }).compileComponents();
   }));
 

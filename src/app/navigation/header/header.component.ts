@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from "@angular/core";
+import { Observable } from "rxjs";
+import { ThemeService } from "src/app/shared/theme.service";
 
 @Component({
   selector: "app-header",
@@ -11,7 +13,15 @@ export class HeaderComponent implements OnInit {
     { code: "en", label: "English" },
     { code: "fr", label: "Français" }
   ];
-  constructor() {}
+  isDarkTheme: Observable<boolean>;
 
-  ngOnInit() {}
+  constructor(private themeService: ThemeService) {}
+
+  ngOnInit() {
+    this.isDarkTheme = this.themeService.isDarkTheme;
+  }
+
+  toggleDarkTheme(checked: boolean) {
+    this.themeService.setDarkTheme(checked);
+  }
 }
