@@ -68,6 +68,13 @@
               "serviceWorker": true,
               "ngswConfigPath": "ngsw-config.json"
             },
+            "en": {
+              "aot": true,
+              "i18nFile": "translate/messages.en.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "fr",
+              "i18nMissingTranslation": "error"
+            },
             "fr": {
               "aot": true,
               "i18nFile": "translate/messages.fr.xlf",
