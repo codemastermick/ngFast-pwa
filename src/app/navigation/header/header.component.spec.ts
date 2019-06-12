@@ -40,7 +40,7 @@ describe("HeaderComponent", () => {
 
   it("should switch themes", () => {
     const spy = spyOn(component, "toggleDarkTheme");
-    component.toggleDarkTheme();
+    component.toggleDarkTheme(true);
     fixture.detectChanges();
     expect(spy).toHaveBeenCalled();
   });
