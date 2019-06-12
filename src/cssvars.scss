@@ -1,0 +1,45 @@
+@import "~@angular/material/theming";
+
+$app-primary: (
+  main: #cc33ca,
+  lighter: #f0c2ef,
+  darker: #b920b7,
+  200: #cc33ca,
+  // For slide toggle,
+    contrast:
+    (
+      main: $light-primary-text,
+      lighter: $dark-primary-text,
+      darker: $light-primary-text
+    )
+);
+$app-accent: (
+  main: #797979,
+  lighter: #d7d7d7,
+  darker: #5c5c5c,
+  200: #797979,
+  // For slide toggle,
+    contrast:
+    (
+      main: $light-primary-text,
+      lighter: $dark-primary-text,
+      darker: $light-primary-text
+    )
+);
+$app-warn: (
+  main: #ff0000,
+  lighter: #ffb3b3,
+  darker: #ff0000,
+  200: #ff0000,
+  // For slide toggle,
+    contrast:
+    (
+      main: $light-primary-text,
+      lighter: $dark-primary-text,
+      darker: $light-primary-text
+    )
+);
+
+$primary: mat-color($app-primary);
+$accent: mat-color($app-accent);
+$warn: mat-color($app-warn);
