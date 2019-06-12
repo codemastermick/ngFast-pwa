@@ -11,7 +11,7 @@
   <mat-toolbar-row class="utilitybar">
     <mat-slide-toggle class="themetoggle"
       [checked]="isDarkTheme | async"
-      (change)="toggleDarkTheme($event.checked)"
+      (change)="toggleDarkTheme()"
       >Dark theme</mat-slide-toggle
     >
     <ng-container class="languagebar" *ngFor="let language of languageList">

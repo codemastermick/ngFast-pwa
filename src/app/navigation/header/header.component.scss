@@ -1,10 +1,12 @@
 .navbar{
   position: sticky;
-  top: 50px
+  top: 0;
+  z-index: 999;
 }
 
 a{
   color:white;
+  text-decoration: none;
 }
 
 .button {
