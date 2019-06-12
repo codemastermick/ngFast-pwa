@@ -37,4 +37,11 @@ describe("HeaderComponent", () => {
     const selectedElement = toolbar.query(By.css("mat-toolbar-row"));
     expect(selectedElement.nativeElement.textContent).toContain("ngFAST");
   });
+
+  it("should switch themes", () => { // TODO fix test
+    const state = spyOn(component, "toggleDarkTheme");
+    component.toggleDarkTheme();
+    fixture.detectChanges();
+    expect(state).toHaveBeenCalled();
+  });
 });

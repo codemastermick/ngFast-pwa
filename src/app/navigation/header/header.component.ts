@@ -21,7 +21,7 @@ export class HeaderComponent implements OnInit {
     this.isDarkTheme = this.themeService.isDarkTheme;
   }
 
-  toggleDarkTheme(checked: boolean) {
-    this.themeService.setDarkTheme(checked);
+  toggleDarkTheme() {
+    this.themeService.setDarkTheme(!this.themeService.isDarkTheme);
   }
 }
