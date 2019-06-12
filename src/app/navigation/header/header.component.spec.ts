@@ -38,10 +38,10 @@ describe("HeaderComponent", () => {
     expect(selectedElement.nativeElement.textContent).toContain("ngFAST");
   });
 
-  it("should switch themes", () => { // TODO fix test
-    const state = spyOn(component, "toggleDarkTheme");
+  it("should switch themes", () => {
+    const spy = spyOn(component, "toggleDarkTheme");
     component.toggleDarkTheme();
     fixture.detectChanges();
-    expect(state).toHaveBeenCalled();
+    expect(spy).toHaveBeenCalled();
   });
 });
