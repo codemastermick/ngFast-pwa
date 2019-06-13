@@ -1,45 +1,12 @@
-@import "~@angular/material/theming";
+// Import material theming functions
+@import '~@angular/material/theming';
 
-$app-primary: (
-  main: #cc33ca,
-  lighter: #f0c2ef,
-  darker: #b920b7,
-  200: #cc33ca,
-  // For slide toggle,
-    contrast:
-    (
-      main: $light-primary-text,
-      lighter: $dark-primary-text,
-      darker: $light-primary-text
-    )
-);
-$app-accent: (
-  main: #797979,
-  lighter: #d7d7d7,
-  darker: #5c5c5c,
-  200: #797979,
-  // For slide toggle,
-    contrast:
-    (
-      main: $light-primary-text,
-      lighter: $dark-primary-text,
-      darker: $light-primary-text
-    )
-);
-$app-warn: (
-  main: #ff0000,
-  lighter: #ffb3b3,
-  darker: #ff0000,
-  200: #ff0000,
-  // For slide toggle,
-    contrast:
-    (
-      main: $light-primary-text,
-      lighter: $dark-primary-text,
-      darker: $light-primary-text
-    )
-);
+// Copy the palettes from your selected theme (usually app-theme.scss).
+$app-primary: mat-palette($mat-grey);
+$app-accent:  mat-palette($mat-light-blue);
+$app-warn:    mat-palette($mat-pink);
 
+// Create your Sass color vars (will be available in all the project)
 $primary: mat-color($app-primary);
 $accent: mat-color($app-accent);
 $warn: mat-color($app-warn);

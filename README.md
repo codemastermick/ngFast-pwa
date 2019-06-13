@@ -17,6 +17,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 -   Has a custom htaccess file for hosting elsewhere
 -   Simple robots.txt included
 -   Comprehensive test suite
+-   i18n support
+-   Dynamic theme switching
 
 ## Integrations
 -   Firebase hosting

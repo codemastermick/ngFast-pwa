@@ -6,7 +6,6 @@ branches:
     - master
     - dev
 install:
-  - npm install -g codecov
   - npm install -g istanbul
 before_script:
   - npm install -g @angular/cli
@@ -15,7 +14,6 @@ script:
   - npm run lint
   - npm run test:coverage
   - npm run build-locale
-  - codecov
 after_success:
   - bash <(curl -s https://codecov.io/bash)
 deploy:

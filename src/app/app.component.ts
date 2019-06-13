@@ -8,10 +8,10 @@ import { Observable } from "rxjs";
   styleUrls: ["./app.component.scss"]
 })
 export class AppComponent implements OnInit {
-  title = "ngFAST"; // replace this with your app"s title
+  title = "ngFAST"; // replace this with your app's title
   foundingYear = 2019; // replace with this year
   author = "Your name here"; // your name or your company name
-  languageList = [
+  languageList = [ // This is a list of languages supported by your app
     { code: "en", label: "English" },
     { code: "fr", label: "Français" }
   ];
