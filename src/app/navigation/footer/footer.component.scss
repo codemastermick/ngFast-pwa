@@ -1,3 +1,5 @@
+@import "../../../cssvars.scss";
+
 .footContainer{
   display: flex;
   justify-content: space-between;
@@ -25,4 +27,8 @@ max-width: 1em;
 
 a{
   text-decoration: none;
+}
+
+.link{
+  color: mat-color($app-accent);
 }
