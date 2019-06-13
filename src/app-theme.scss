@@ -8,7 +8,7 @@
 // have to load a single css file for Angular Material in your app.
 
 // Fonts
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
 $fontConfig: (
   display-4: mat-typography-level(112px, 112px, 300, "Roboto", -0.0134em),
@@ -212,8 +212,4 @@ $altTheme: mat-dark-theme($theme-primary, $theme-accent, $theme-warn);
 .mat-standard-chip {
   padding: 0.5em 0.85em;
   min-height: 2.5em;
-}
-
-.link {
-  color: mat-color($theme-accent);
 }
