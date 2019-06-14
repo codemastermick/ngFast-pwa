@@ -6,7 +6,6 @@ branches:
     - master
     - /^greenkeeper/.*$/
 install:
-  - npm install -g codecov
   - npm install -g istanbul
 before_script:
   - npm install -g @angular/cli
@@ -14,9 +13,7 @@ script:
   - npm install
   - npm run lint
   - npm run test:coverage
-  - npm run test-with-coverage
-  - npm run build:ssr
-  - codecov
+  - npm run build-locale
 after_success:
   - bash <(curl -s https://codecov.io/bash)
 deploy:
@@ -24,3 +21,5 @@ deploy:
   provider: firebase
   token:
     secure: $FIREBASE_TOKEN
+  on:
+    branch: master

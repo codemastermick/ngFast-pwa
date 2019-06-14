@@ -1,9 +1,10 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<app-header [title]="title"></app-header>
+<div class="container" [ngClass]="{ 'theme-alternate': isDarkTheme | async }">
+  <app-header [title]="title" [languageList]="languageList"></app-header>
 
-<div class="container">
-  <router-outlet></router-outlet>
+  <div class="container mat-app-background">
+    <router-outlet></router-outlet>
+  </div>
+  <!-- Footer -->
+  <app-footer [foundingYear]="foundingYear" [author]="author"></app-footer>
 </div>
-
-<!-- Footer -->
-<app-footer [foundingYear]="foundingYear" [author]="author"></app-footer>

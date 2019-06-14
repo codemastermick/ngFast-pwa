@@ -8,6 +8,7 @@ import { ServiceWorkerModule } from "@angular/service-worker";
 import { environment } from "../environments/environment";
 import { RouterModule } from "@angular/router";
 import { NavigationModule } from "./navigation/navigation.module";
+import { ThemeService } from "./shared/theme.service";
 
 @NgModule({
   declarations: [AppComponent],
@@ -22,7 +23,7 @@ import { NavigationModule } from "./navigation/navigation.module";
     RouterModule,
     NavigationModule
   ],
-  providers: [],
+  providers: [ThemeService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

@@ -1,4 +1,4 @@
-<mat-toolbar color="primary">
+<mat-toolbar class="header" color="primary">
   <mat-toolbar-row>
     <img
       mat-card-avatar
@@ -8,15 +8,27 @@
     />
     {{ title }}
   </mat-toolbar-row>
+  <mat-toolbar-row class="utilitybar">
+    <mat-slide-toggle class="themetoggle"
+      [checked]="isDarkTheme | async"
+      (change)="toggleDarkTheme($event.checked)"
+      >Dark theme</mat-slide-toggle
+    >
+    <ng-container class="languagebar" *ngFor="let language of languageList">
+      <a href="/{{ language.code }}/">
+        <button class="button">{{ language.label }}</button>
+      </a>
+    </ng-container>
+  </mat-toolbar-row>
 </mat-toolbar>
 <mat-toolbar color="accent" class="navbar">
   <div>
-    <a routerLink="/home">Home</a>
+    <a i18n routerLink="/home">Home</a>
     &nbsp;
-    <a routerLink="/about">About</a>
+    <a i18n routerLink="/about">About</a>
     &nbsp;
-    <a routerLink="/contact">Contact</a>
+    <a i18n routerLink="/contact">Contact</a>
     &nbsp;
-    <a routerLink="/docs">Docs</a>
+    <a i18n routerLink="/docs">Docs</a>
   </div>
 </mat-toolbar>

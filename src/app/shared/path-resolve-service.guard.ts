@@ -1,6 +1,5 @@
 import { Injectable } from "@angular/core";
 import { Resolve, ActivatedRouteSnapshot, RouterStateSnapshot, UrlTree } from "@angular/router";
-import { Observable } from "rxjs";
 import { paths } from "../app-paths";
 
 @Injectable({
@@ -23,12 +22,14 @@ export class PathResolveService implements Resolve<string | null> {
     return `/${dictionary[0]}`;
   }
 
+  // Returns 3 on short words and 5 on longer words
   getThreshold(path: string): number {
     if (path.length < 5) { return 3; }
 
     return 5;
   }
 
+  // Sorts letters in dictionary by levenshtein distance
   sortByDistances(typoPath: string, dictionary) {
     const pathsDistance = {} as { [name: string]: number };
 
@@ -44,6 +45,7 @@ export class PathResolveService implements Resolve<string | null> {
     });
   }
 
+  // Calculates the levenshtein distance between two letters
   levenshtein(a: string, b: string): number {
     if (a.length === 0) {
       return b.length;

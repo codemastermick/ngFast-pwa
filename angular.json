@@ -38,9 +38,7 @@
                 "output": "/"
               }
             ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "styles": ["src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -69,6 +67,20 @@
               ],
               "serviceWorker": true,
               "ngswConfigPath": "ngsw-config.json"
+            },
+            "en": {
+              "aot": true,
+              "i18nFile": "translate/messages.en.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "fr",
+              "i18nMissingTranslation": "error"
+            },
+            "fr": {
+              "aot": true,
+              "i18nFile": "translate/messages.fr.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "fr",
+              "i18nMissingTranslation": "error"
             }
           }
         },
@@ -80,7 +92,8 @@
           "configurations": {
             "production": {
               "browserTarget": "ngFast-pwa:build:production"
-            }
+            },
+            "fr": { "browserTarget": "ngFast-pwa:build:fr" }
           }
         },
         "extract-i18n": {
@@ -116,9 +129,7 @@
               "tsconfig.spec.json",
               "e2e/tsconfig.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         },
         "e2e": {
