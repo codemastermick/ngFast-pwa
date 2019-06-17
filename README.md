@@ -4,7 +4,8 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/416ae7ab519647198f2ad3cdb2a76e86)](https://www.codacy.com/app/codemastermick/ngFast-pwa?utm_source=github.com&utm_medium=referral&utm_content=codemastermick/ngFast-pwa&utm_campaign=Badge_Grade)
 [![codecov](https://codecov.io/gh/codemastermick/ngFast-pwa/branch/master/graph/badge.svg)](https://codecov.io/gh/codemastermick/ngFast-pwa)
 [![David](https://img.shields.io/david/codemastermick/ngFast-pwa.svg)](https://david-dm.org/codemastermick/ngFast-pwa)
-[![GitHub issues](https://img.shields.io/github/issues/codemastermick/ngFast-pwa.svg)](https://github.com/codemastermick/ngFast-pwa/issues) [![Greenkeeper badge](https://badges.greenkeeper.io/codemastermick/ngFast-pwa.svg)](https://greenkeeper.io/)
+[![GitHub issues](https://img.shields.io/github/issues/codemastermick/ngFast-pwa.svg)](https://github.com/codemastermick/ngFast-pwa/issues)
+[![Greenkeeper badge](https://badges.greenkeeper.io/codemastermick/ngFast-pwa.svg)](https://greenkeeper.io/)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.2.
 

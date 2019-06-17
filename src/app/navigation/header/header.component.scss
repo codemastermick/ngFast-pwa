@@ -1,3 +1,5 @@
+@import "../../../cssvars.scss";
+
 .navbar{
   position: sticky;
   top: 0;
@@ -10,7 +12,7 @@ a{
 }
 
 .button {
-  background-color: darkslateblue;
+  background-color: mat-color($app-primary);
   border-radius: 5px;
   color: white;
   padding: 5px;
