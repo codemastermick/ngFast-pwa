@@ -6,13 +6,17 @@
   z-index: 999;
 }
 
+.navbar a{
+  color: mat-color($app-warn);
+}
+
 a{
   color:white;
   text-decoration: none;
 }
 
 .button {
-  background-color: mat-color($app-primary);
+  background-color: mat-color($app-accent);
   border-radius: 5px;
   color: white;
   padding: 5px;
@@ -23,8 +27,11 @@ a{
 
 .header{
   display: flex;
-
 }
+
+// .title{
+//   color: mat-color($app-accent);
+// }
 
 .utilitybar{
   justify-content: space-between;
@@ -32,6 +39,7 @@ a{
 
 .themetoggle{
   flex-grow: 1;
+  color: mat-color($app-warn);
 }
 
 .languagebar{
