@@ -5,6 +5,7 @@ branches:
   only:
     - master
     - /^greenkeeper/.*$/
+    - /^feat-.*$/
 install:
   - npm install -g istanbul
 before_script:
