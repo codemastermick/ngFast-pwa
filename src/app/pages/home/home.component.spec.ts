@@ -3,6 +3,7 @@ import { HomeComponent } from "./home.component";
 import { MaterialModule } from "src/app/material/material.module";
 import { HomeRoutingModule } from "./home-routing.module";
 import { By } from "@angular/platform-browser";
+import "hammer.js";
 
 describe("HomeComponent", () => {
   let component: HomeComponent;

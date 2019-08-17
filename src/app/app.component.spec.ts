@@ -3,6 +3,7 @@ import { RouterTestingModule } from "@angular/router/testing";
 import { AppComponent } from "./app.component";
 import { NavigationModule } from "./navigation/navigation.module";
 import { ThemeService } from "./shared/theme.service";
+import "hammer.js";
 
 describe("AppComponent", () => {
   beforeEach(async(() => {

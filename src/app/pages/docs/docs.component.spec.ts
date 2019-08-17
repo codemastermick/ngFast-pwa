@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 import { DocsComponent } from "./docs.component";
 import { MaterialModule } from "src/app/material/material.module";
+import "hammer.js";
 
 describe("DocsComponent", () => {
   let component: DocsComponent;

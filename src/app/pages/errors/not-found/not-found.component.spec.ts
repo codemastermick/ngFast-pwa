@@ -4,6 +4,7 @@ import { MaterialModule } from "src/app/material/material.module";
 import { NotFoundRoutingModule } from "./not-found-routing,module";
 import { RouterTestingModule } from "@angular/router/testing";
 import { By } from "@angular/platform-browser";
+import "hammer.js";
 
 describe("NotFoundComponent", () => {
   let component: NotFoundComponent;

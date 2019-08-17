@@ -3,6 +3,7 @@ import { HeaderComponent } from "./header.component";
 import { MaterialModule } from "src/app/material/material.module";
 import { By } from "@angular/platform-browser";
 import { ThemeService } from "src/app/shared/theme.service";
+import "hammer.js";
 
 describe("HeaderComponent", () => {
   let component: HeaderComponent;
