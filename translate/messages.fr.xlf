@@ -328,6 +328,15 @@ Construit sur Angular 8, hébergé par Firebase et utilisant les dernières opti
           <context context-type="linenumber">170</context>
         </context-group>
       </trans-unit>
+      </trans-unit>
+            <trans-unit id="981c80e8597c4a59a9180af83f71dbba4bac5999" datatype="html">
+        <source>Footnote: Yeah, I know it looks ugly. I am not a great visual designer, but that is up to you! The code is a solid starting point for you to build on.</source>
+        <target>Note de bas de page: Oui, je sais que c'est moche. Je ne suis pas un grand designer visuel, mais cela dépend de vous! Le code est un solide point de départ sur lequel vous pouvez construire.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>

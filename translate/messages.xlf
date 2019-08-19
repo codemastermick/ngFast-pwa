@@ -6,28 +6,28 @@
         <source>Home</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navigation/header/header.component.html</context>
-          <context context-type="linenumber">21</context>
+          <context context-type="linenumber">26</context>
         </context-group>
       </trans-unit>
       <trans-unit id="004b222ff9ef9dd4771b777950ca1d0e4cd4348a" datatype="html">
         <source>About</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navigation/header/header.component.html</context>
-          <context context-type="linenumber">23</context>
+          <context context-type="linenumber">28</context>
         </context-group>
       </trans-unit>
       <trans-unit id="34746fb1c7f3d2194d99652bdff89e6e14c9c4f4" datatype="html">
         <source>Contact</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navigation/header/header.component.html</context>
-          <context context-type="linenumber">25</context>
+          <context context-type="linenumber">30</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a7ecfd7757d04b019beaa2d7208c728387bfc7e8" datatype="html">
         <source>Docs</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navigation/header/header.component.html</context>
-          <context context-type="linenumber">27</context>
+          <context context-type="linenumber">32</context>
         </context-group>
       </trans-unit>
       <trans-unit id="75b06993e2eea60fda4c79f2d45f6372bf51ef4f" datatype="html">
@@ -78,6 +78,13 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
           <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="981c80e8597c4a59a9180af83f71dbba4bac5999" datatype="html">
+        <source>Footnote: Yeah, I know it looks ugly. I am not a great visual designer, but that is up to you! The code is a solid starting point for you to build on.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">26</context>
         </context-group>
       </trans-unit>
       <trans-unit id="b92a33bbe5fc13cb7bec53c042c8a84379abf994" datatype="html">
