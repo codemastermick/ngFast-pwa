@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 import { HeaderComponent } from "./header.component";
-import { MaterialModule } from "src/app/material/material.module";
+import { MaterialModule } from "src/app/shared/material.module";
 import { By } from "@angular/platform-browser";
 import { ThemeService } from "src/app/shared/theme.service";
 
