@@ -186,17 +186,14 @@ Construit sur Angular 8, hébergé par Firebase et utilisant les dernières opti
             <trans-unit id="c1d9370a3abfeee24d04bee6293de559071e21fa" datatype="html">
                 <source>
     I am available for jobs if you need something made, just
-
                     <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>drop me a line
                     <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>.
-
                 </source>
                 <target>
     Je suis disponible pour des emplois si vous avez besoin de quelque chose, juste
 
                     <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>laisse moi un mot
                     <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>.
-
                 </target>
                 <context-group purpose="location">
                     <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
