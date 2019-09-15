@@ -70,7 +70,7 @@
     "next-update": "^3.6.0",
     "protractor": "~5.4.0",
     "ts-loader": "^6.0.4",
-    "ts-node": "~8.3.0",
+    "ts-node": "~8.4.0",
     "tslint": "~5.17.0",
     "typescript": "~3.4.5",
     "webpack-cli": "^3.3.7"
